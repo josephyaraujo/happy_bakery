@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    background-color: #fcf6f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;   
+}
+.logotipo img{
+    padding: 1em;
+    padding-left: 3em;
+    max-height: 176px;
+    max-width: 210px;
+    height: auto;
+    width: auto;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top: 2.5em;
+    margin-right: 1em;
+    font-family: "Orelega One", system-ui;
+    font-style: normal;
+    font-size: 24pt;
+    flex-wrap: wrap;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu ul li {
+    margin: 0 20px;
+}
+div.doces{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+div.bolos{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+div.croissants{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+div.salgados{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+div.brunchs{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+div.bebidas{
+    display: flex;
+    gap: 1.2em;
+    padding-bottom: 3em;
+}
+figure{
+    box-shadow: -6px 6px 0px #f5afa7;
+}
+img{
+    height: 200px;
+    width: auto;
+}
+figcaption{
+    background-color: whitesmoke;   
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+figcaption h3{
+    font-family: "Orelega One", system-ui;
+    font-size: 14pt;
+}
+figcaption p{
+    font-family: "Rosario", sans-serif;
+    font-size: 12pt;
+}
+figcaption h4{
+    font-family: "Orelega One", system-ui;
+    font-size: 12pt;
+}
+h2{
+    font-family: "Orelega One", system-ui;
+    font-size: 30pt;
+    color:#FF6883;
+}
+main{
+    background-color: #FEDAD6;
+    padding: 4em;
+}
+footer{
+    background-color: #f5afa7;
+    padding: 1.5em;
+}
+.container-inst{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-inst p{
+    font-family: "Orelega One", system-ui;
+    font-size: 20pt;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.social-icons li {
+    display: inline-block;
+}
+.container-inst svg{
+    height: 30px;
+    width: 30px;
+}
+footer ul{
+    list-style: none;
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    font-size: 16pt;
+    margin-left: -1.5em;
+    margin-top: 0.5em;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+.dev {
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    color: black;
+    text-align: right;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction:row;
+        align-items: center;
+    }
+    .logotipo img {
+        padding-left: 0;
+        max-width: 150px;
+        height: auto;
+    }
+    header ul {
+        flex-direction: column;
+        font-size: 14pt;
+        margin-top: 1em;
+        margin-right: 0;
+        align-items:start;
+    }
+    div.doces, div.bolos, div.croissants, div.salgados, div.brunchs, div.bebidas {
+        flex-direction: column;
+        gap: 1em;
+    }
+    figure {
+        width: 100%;
+        box-shadow: -6px 6px 0px #f5afa7;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    figcaption {
+        width: 100%;
+        height: auto;
+    }
+    figcaption h3 {
+        font-size: 14pt;
+    }
+    figcaption p {
+        font-size: 12pt;
+    }
+    figcaption h4 {
+        font-size: 14pt;
+    }
+    h2 {
+        font-size: 24pt;
+    }
+    main {
+        padding: 2em;
+    }
+    footer ul {
+        font-size: 14pt;
+    }
+    .container-inst {
+        flex-direction: row;
+        text-align: center;
+    }
+    .container-inst svg {
+        width: 25px;
+        height: 25px;
+    }
+}

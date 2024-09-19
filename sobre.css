@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    background-color: #fcf6f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;   
+}
+.logotipo img{
+    padding: 1em;
+    padding-left: 3em;
+    max-height: 176px;
+    max-width: 210px;
+    height: auto;
+    width: auto;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top: 2.5em;
+    margin-right: 1em;
+    font-family: "Orelega One", system-ui;
+    font-style: normal;
+    font-size: 24pt;
+    flex-wrap: wrap;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu ul li {
+    margin: 0 20px;
+}
+.container{
+    display: flex;
+    gap: 60px;
+}
+.carousel{
+    width: 600px;
+    height: auto;
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: -15px 15px 0px #F8C46E;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}
+.texto {
+    max-width: 1200px;   
+    margin: 0;
+    padding: 0; 
+}
+.texto h2 {
+    margin-bottom: 15px;
+    color: #FF6883;
+    font-family: "Orelega One", system-ui;
+    font-size: 35pt;
+}
+.texto h3 {
+    margin-bottom: 15px;
+    color: black;
+    font-family: "Orelega One", system-ui;
+    font-size: 22pt;
+}
+.texto p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Rosario", sans-serif;
+    font-style:normal;
+    font-weight: lighter;
+    font-size: 16pt;
+    color: black;
+}
+.assinatura h4 {
+    margin-bottom: 15px;
+    color: black;
+    font-family: "Orelega One", system-ui;
+    font-size: 22pt;
+}
+main{
+    background-color: #FEDAD6;
+    padding: 4em;
+}
+footer{ 
+    background-color: #f5afa7;
+    padding: 1.5em;
+}
+.container-inst{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-inst p{
+    font-family: "Orelega One", system-ui;
+    font-size: 20pt;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.social-icons li {
+    display: inline-block;
+}
+.container-inst svg{
+    height: 30px;
+    width: 30px;
+}
+footer ul{
+    list-style: none;
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    font-size: 16pt;
+    margin-left: -1.5em;
+    margin-top: 0.5em;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+.dev {
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    color: black;
+    text-align: right;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction:row;
+        align-items: center;
+    }
+    .logotipo img {
+        padding-left: 0;
+        max-width: 150px;
+        height: auto;
+    }
+    header ul {
+        flex-direction: column;
+        font-size: 14pt;
+        margin-top: 1em;
+        margin-right: 0;
+        align-items:start;
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .carousel {
+        width: 100%;  
+    }
+    .texto h2 {
+        font-size: 24pt;
+    }
+    .texto h3 {
+        font-size: 18pt;
+    }
+    .texto p {
+        font-size: 14pt;
+    }
+    .assinatura h4 {
+        font-size: 18pt;
+    }
+    main {
+        padding: 2em;
+    }
+    footer ul {
+        font-size: 14pt;
+    }
+    .container-inst {
+        flex-direction: row;
+        text-align: center;
+    }
+    .container-inst svg {
+        width: 25px;
+        height: 25px;
+    }
+}

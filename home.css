@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    background-color: #fcf6f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;   
+}
+.logotipo img{
+    padding: 1em;
+    padding-left: 3em;
+    max-height: 176px;
+    max-width: 210px;
+    height: auto;
+    width: auto;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top: 2.5em;
+    margin-right: 1em;
+    font-family: "Orelega One", system-ui;
+    font-style: normal;
+    font-size: 24pt;
+    flex-wrap: wrap;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu ul li {
+    margin: 0 20px;
+}
+.carousel-caption p{
+    background: #bed1e3;
+    text-align: center;
+    margin-bottom: 6em;
+    margin-left: 25em;
+    width: 25em;
+    border-radius: 2em;;
+}
+.carousel-caption p a{
+    color: #4a79a5;
+    font-family: "Orelega One", system-ui;
+    font-size: 20pt;
+}
+.carousel-indicators {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+div.acesso-rapido{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.button-1 {
+    background-color: #FAE2BC;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-radius: 1em;
+    width:40em;
+    height: 5em;
+    text-align: left;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "Orelega One", system-ui;
+    font-size: 16pt;
+    line-height: 0;
+    color: #d98700;
+    flex-wrap: wrap;
+}
+.button-1 p a{
+    font-size: 25pt;
+    line-height: 1;
+    color: #d98700;
+    padding: 0;
+    margin: 0;
+}
+.button-1 p a:hover{
+    color:#8a5500;
+}
+div.button-1 svg{
+    height: 95px;
+    width: 95px;
+    color: #F1C989;
+    padding-top: 0.5em;
+}
+.button-2 {
+    background-color: #FAE2BC;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-radius: 1em;
+    width: 40em;
+    height: 5em;
+    text-align: left;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "Orelega One", system-ui;
+    font-size: 16pt;
+    line-height: 0;
+    color: #d98700;
+    flex-wrap: wrap;
+}
+.button-2 p a{
+    font-size: 25pt;
+    line-height: 1;
+    color: #d98700;
+    padding: 0;
+    margin: 0;
+}
+.button-2 p a:hover{
+    color:#8a5500;
+}
+div.button-2 svg{
+    height: 75px;
+    width: 75px;
+    color: #F1C989;
+    padding-top: 0.5em;
+}
+.apresentacao-container{
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+    gap: 7em;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    margin: 0;
+    padding: 3em;
+    flex-wrap: wrap;
+}
+figure{
+    box-shadow: -15px 15px 0px #F8C46E;
+    margin: 0;
+    padding: 0; 
+}
+img{
+    height: 600px;
+    width: auto;
+    max-width: 100%;
+}
+.texto {
+    max-width: 850px;   
+    margin: 0;
+    padding: 0; 
+}
+.texto h2 {
+    margin-bottom: 15px;
+    color: #FF6883;
+    font-family: "Orelega One", system-ui;
+    font-size: 35pt;
+}
+.texto p {
+    line-height: 2;
+    margin-bottom: 20px;
+    font-family: "Rosario", sans-serif;
+    font-style:normal;
+    font-weight: lighter;
+    font-size: 20pt;
+    color: black;
+}
+.button .btn {
+    display: inline-block;
+    background-color: #bed1e3;
+    color: #4a79a5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2em;
+    font-family: "Orelega One", system-ui;
+    font-size: 20pt;
+}
+.button .btn:hover{
+    color: aliceblue;
+}
+main{
+    background-color: #fcf6f0;
+}
+footer{
+    background-color: #f5afa7;
+    padding: 1.5em;
+}
+.container-inst{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-inst p{
+    font-family: "Orelega One", system-ui;
+    font-size: 20pt;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.social-icons li {
+    display: inline-block;
+}
+.container-inst svg{
+    height: 30px;
+    width: 30px;
+}
+footer ul{
+    list-style: none;
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    font-size: 16pt;
+    margin-left: -1.5em;
+    margin-top: 0.5em;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+.dev {
+    font-family: "Rosario", sans-serif;
+    font-style: normal;
+    color: black;
+    text-align: right;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction:row;
+        align-items: center;
+    }
+    .logotipo img {
+        padding-left: 0;
+        max-width: 150px;
+        height: auto;
+    }
+    header ul {
+        flex-direction: column;
+        font-size: 14pt;
+        margin-top: 1em;
+        margin-right: 0;
+        align-items:start;
+    }
+    .carousel-indicators {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0.05em;
+    }
+    .button-1, .button-2 {
+        width: 97%;
+        height: auto;
+        padding: 0.5em;
+        gap:10px;
+    }
+    .button-1 p a, .button-2 p a{
+        font-size: 14pt;
+    }
+    .button-1 p, .button-2 p{
+        font-size: 11pt;
+    }
+    div.button-1 svg, div.button-2 svg {
+        width: 50px;
+        height: 50px;
+    }
+    .apresentacao-container {
+        flex-direction: column;
+        padding: 2em;
+        gap: 3em;
+    }
+    figure {
+        margin: 0;
+        width: 80%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .texto h2 {
+        font-size: 24pt;
+    }
+    .texto p {
+        font-size: 14pt;
+    }
+    .button .btn {
+        font-size: 16pt;
+        padding: 8px 16px;
+    }
+    footer ul {
+        font-size: 14pt;
+    }
+    .container-inst {
+        flex-direction: row;
+        text-align: center;
+    }
+    .container-inst svg {
+        width: 25px;
+        height: 25px;
+    }
+}
